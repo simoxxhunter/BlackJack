@@ -78,7 +78,7 @@ public class Card {
         shown = !shown;
     }
 
-   @Override
+    @Override
     public String toString() {
         String show;
         if (shown) {
