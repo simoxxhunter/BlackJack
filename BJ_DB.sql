@@ -51,4 +51,9 @@ INSERT INTO T_cards (Card_Color, Card_Value) VALUES
     ('Hearts ♥', 4), ('Hearts ♥', 5), ('Hearts ♥', 6),
     ('Hearts ♥', 7), ('Hearts ♥', 8), ('Hearts ♥', 9),
     ('Hearts ♥', 10), ('Hearts ♥', 10), ('Hearts ♥', 10), ('Hearts ♥', 10);
+	
+SELECT * FROM t_cards;
 
+
+
+	

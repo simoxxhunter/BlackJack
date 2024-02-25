@@ -64,7 +64,7 @@ public class BlackJackGame {
             player.placeBet(betAmount);
 
             player.GivePlayerTwoCards(deck);
-           // dealer.GiveInitialCards(deck);
+            dealer.GiveInitialCards(deck);
 
             System.out.println("Player's hand:");
             player.displayHand();

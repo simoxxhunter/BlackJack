@@ -27,7 +27,6 @@ public class Hand {
         }
     }
 
-    // Constructor with parameters
     public Hand(int totalValue, String name, int cardsNumber, int listCards, Card[] cards, int numCards) {
         this.totalValue = totalValue;
         this.name = name;

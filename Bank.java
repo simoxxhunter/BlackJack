@@ -26,7 +26,6 @@ public class Bank extends person {
         hiddenCard.TurnCard();
         hand.addCard(hiddenCard);
 
-        // Remove dealt cards from the deck
         deck.removeCard(0);
         deck.removeCard(0);
 

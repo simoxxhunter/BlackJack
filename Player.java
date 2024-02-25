@@ -25,13 +25,13 @@ public class Player extends person {
 
     public void GivePlayerTwoCards(cards_pack cardPack) {
         int i = 0;
+        Card[] updatedCardsPack = new Card[cardPack.getSize() - 1];
+
         while (i < 2) {
             int j = 0;
 
             Card card = cardPack.getListCards()[0];
             hand.addCard(card);
-            Card[] updatedCardsPack = new Card[cardPack.getSize() - 1];
-
             while (j < cardPack.getSize() - 1) {
                 updatedCardsPack[j] = cardPack.getListCards()[j + 1];
             }
@@ -82,7 +82,7 @@ public class Player extends person {
         System.out.println("Player draws a new card: " + newCard);
     }
 
-    public void stand() {
+    public static void stand() {
         System.out.println("You choose to stand.");
 
     }

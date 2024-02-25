@@ -7,18 +7,6 @@ public class cards_pack {
     private Card[] listCards;
     private int size;
 
-    public cards_pack(Card.Card_type[] types, Card.CardValue[] values) {
-        int index = 0;
-        this.size = types.length * values.length;
-        this.listCards = new Card[size];
-
-        for (Card.Card_type type : types) {
-            for (Card.CardValue value : values) {
-                listCards[index++] = new Card(type, value);
-            }
-        }
-    }
-
     public cards_pack() {
         this.listCards = new Card[52];
         this.size = 52;
@@ -65,12 +53,10 @@ public class cards_pack {
             return;
         }
 
-        // Shift the cards after the removed card to the left
         for (int i = index; i < size - 1; i++) {
             listCards[i] = listCards[i + 1];
         }
 
-        // Set the last card to null and decrement the size
         listCards[size - 1] = null;
         size--;
     }
